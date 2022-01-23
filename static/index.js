@@ -122,7 +122,7 @@ function gameRestart() {
     _gameScore = 199;
     _gameOver = false;
     _gameStart = false;
-    _gameTimeNum = 3;
+    _gameTimeNum = 20;
     GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
     countBlockSize();
     refreshGameLayer(GameLayer[0]);
