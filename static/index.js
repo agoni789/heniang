@@ -119,10 +119,10 @@ function gameInit() {
 function gameRestart() {
     _gameBBList = [];
     _gameBBListIndex = 0;
-    _gameScore = 0;
+    _gameScore = 199;
     _gameOver = false;
     _gameStart = false;
-    _gameTimeNum = 20;
+    _gameTimeNum = 3;
     GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
     countBlockSize();
     refreshGameLayer(GameLayer[0]);
@@ -345,7 +345,7 @@ function shareText(score) {
     if (score <= 99) return '还算可以';
     if (score <= 149) return '单身多久了？';
     if (score <= 199) return '晚上来我屋';
-    return '人？';
+    return '盒娘今晚把你当狗溜';
 }
 
 function toStr(obj) {
